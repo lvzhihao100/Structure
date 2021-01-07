@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LoginButton" parent="CommonButton">
+
+    </style>
+
+    <style name="LoginCheckButton" parent="CommonButton">
+        <item name="android:background">@drawable/common_shape_button_corner3</item>
+    </style>
+
+    <style name="LoginEditStyle">
+        <item name="android:background">@drawable/common_shape_corner_3</item>
+        <item name="android:backgroundTint">@color/loginEditBg</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+</resources>

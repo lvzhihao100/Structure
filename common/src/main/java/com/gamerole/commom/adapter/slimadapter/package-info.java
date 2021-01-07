@@ -1,0 +1,1 @@
+package com.gamerole.commom.adapter.slimadapter;

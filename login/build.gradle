@@ -1,0 +1,54 @@
+import com.gamerole.plugin.BuildConfig
+
+//import com.gamerole.plugin.BuildConfig
+
+//import com.gamerole.plugin.BuildConfig
+
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+
+android {
+
+    compileSdkVersion BuildConfig.compileSdkVersion
+    defaultConfig {
+        minSdkVersion BuildConfig.minSdkVersion
+        targetSdkVersion BuildConfig.targetSdkVersion
+        versionCode BuildConfig.versionCode
+        versionName BuildConfig.versionName
+        kapt { arguments { arg("AROUTER_MODULE_NAME", project.getName()) } }
+    }
+    resourcePrefix "login"
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    api "com.google.dagger:hilt-android:2.28-alpha"
+    kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
+    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha02'
+    kapt 'com.alibaba:arouter-compiler:1.2.2'
+    api project(path: ':common')
+
+
+}

@@ -1,0 +1,5 @@
+rootProject.name = "Structure"
+includeBuild 'VersionPlugin'
+include ':common'
+include ':app'
+include ':login'

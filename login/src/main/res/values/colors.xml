@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    换肤产品，颜色-->
+        <color name="loginTextTitle">@color/commonTextTitle</color>
+        <color name="loginTextContent">@color/commonTextContent</color>
+        <color name="loginTextHint">@color/commonTextHint</color>
+        <color name="loginBgDeep">@color/commonBgDeep</color>
+        <color name="loginBg">@color/commonBg</color>
+
+        <color name="loginDivider">@color/commonDivider</color>
+        <color name="loginDividerDeep">@color/commonDividerDeep</color>
+        <color name="loginApp">@color/commonApp</color>
+        <color name="loginStroke">@color/commonStroke</color>
+        <color name="loginEditBg">@color/commonEditBg</color>
+
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gamerole.login">
+
+
+    <application>
+
+
+        <activity android:name="com.gamerole.login.ui.LoginActivity"/>
+
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.ForgetPwdActivity" />
+    </application>
+
+</manifest>
